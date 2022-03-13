@@ -18,7 +18,7 @@
     grid-template-columns:repeat(12, 1fr);
     grid-template-rows: 0.25fr 1fr 1fr 0.15fr;
     grid-auto-rows: (100px,auto);
-    row-gap: 2ch;
+    row-gap: 8ch;
 }
 
 .distribution__historia{
@@ -112,7 +112,24 @@ font-size: 200%;
     display: flex;
     flex-direction: column;
 }
-
+.main__headers1{ 
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    font-size: 150%;
+    color: var(--principal);
+}
+.main__headers1 h5{ 
+    padding: 15%;
+    font-size: larger;
+}
+.main__headers1:hover{ 
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+}
 .main__ditribution {
     display: flex;
     flex-direction: row;
@@ -400,11 +417,43 @@ grid-column: 2/12;
     font-size: 25px;
     color: #336971;
 }
-.sthetic img {
-    height: 80%;
-    width: 17vw;
+.txt{
+    background-color: rgba(0, 0, 0,0);
+    height: 100%;
+    width: 100%;
+    size: auto;
+    text-align: center;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0,0);
+    position: relative;
+    transition: all .3s;
+}
+    .txt h5{
+font-size: 120%;
+padding-bottom: 20vh;
+
+    }
+    .txt h4{
+font-size: 80%;
+color:#CE241A;
+overflow:scroll;
+
+
+    }
+.txt:hover{
+background-color: rgba(0, 0, 0,0.6);
+    opacity: 1;
+    
+}
+.sthetic img {
+    position: relative;
+    height: 100%;
+    width: 23vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
     justify-content: space-evenly;
     margin: 10px 0px 10px 0px;
@@ -412,6 +461,12 @@ grid-column: 2/12;
     border-style: ridge;
     border-width: 5px;
     border-color: #336971;
+    cursor: pointer;
+}
+.image_product{
+    height: 150vh;
+    width:150vw;
+    z-index: -1;
 }
 .image__map {
     height: 100%;
@@ -554,7 +609,15 @@ grid-column: 2/12;
 .pretty{
 grid-row: 3/3;
 grid-row:2/12;
+}
+.efecto{
 
+    background-color: rgba(175, 174, 174, 0);
+
+
+}
+.efecto :hover{
+    background-color: rgb(236, 236, 236,0.8);
 
 }
 
@@ -572,7 +635,9 @@ height:100px;
 .picture2{
     grid-column: 3/4;
     grid-row:2/2;
+
 }
+
 .product{
     grid-column: 9/11;
     grid-row: 2/2;
@@ -648,6 +713,18 @@ height:100px;
     top:20%;
 
 }
+.txt h5{
+    font-size: 80%;
+    padding-bottom: 10vh;
+    
+        }
+        .txt h4{
+    font-size: 50%;
+    color:#CE241A;
+    overflow:scroll;
+    
+    
+        }
 
 /* Large devices (laptops/desktotps) */
 @media only screen and (max-width: 1200px) {
