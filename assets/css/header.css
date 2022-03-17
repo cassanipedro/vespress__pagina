@@ -11,7 +11,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+.card__acomodation{
+font-size: 130%;
+ margin: 3rem 3rem 3rem 13rem;
+ position:relative;
 
+}
 .distribution{
     background-color: var(--principal);
     display:grid;
@@ -20,7 +25,13 @@
     grid-auto-rows: (100px,auto);
     row-gap: 8ch;
 }
-
+.distribution3{
+    background-color: var(--principal);
+    display:grid;
+    grid-template-columns:repeat(12, 1fr);
+    grid-template-rows:  1fr 0.15fr;
+    grid-auto-rows: (100px,auto);
+}
 .distribution__historia{
     background-color: var(--principal);
     display:grid;
@@ -321,8 +332,9 @@ grid-row: 3/3;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    height: 52vh;
 
-grid-row:3/3;
+grid: row 2/3;
 grid-column: 2/12;
 }
 .table__format {
@@ -498,7 +510,7 @@ background-color: rgba(0, 0, 0,0.6);
 }
 .hr__style {
     background-image: linear-gradient(#a58d74,#A1DED2);
-    border: 1px solid var(--secondary);
+    border:  none;
     display: flex;
     width: 100%;
 
@@ -507,7 +519,7 @@ background-color: rgba(0, 0, 0,0.6);
 }
 .hr__style2 {
     background-image: linear-gradient(#A1DED2,#a58d74);
-    border: 1px solid var(--secondary);
+    border: none;
     display: flex;
     width: 100%;
     grid-row: 3/3;
@@ -569,9 +581,19 @@ background-color: rgba(0, 0, 0,0.6);
     transition: opacity 0.25s;
     padding:7px 7px 7px 13px;
 }
+.align-items-center{
 
 
-
+    width: 70%;
+}
+body{
+background-color: var(--principal);
+}
+.mb-3{
+    position: relative;
+width: 70%;
+left: 3rem;
+}
 .transition2 p{
     height: 300px;
     top: 530px;
@@ -680,7 +702,7 @@ height:100px;
         grid-row:2/2;
         grid-column: 1/12;
         display: flex;
-        flex-direction: row;
+        justify-content:center ;
     }
     /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -717,14 +739,14 @@ height:100px;
     font-size: 80%;
     padding-bottom: 10vh;
     
-        }
-        .txt h4{
+}
+.txt h4{
     font-size: 50%;
     color:#CE241A;
     overflow:scroll;
     
     
-        }
+}
 
 /* Large devices (laptops/desktotps) */
 @media only screen and (max-width: 1200px) {
@@ -788,6 +810,7 @@ height:100px;
         grid-column: 6/6;
         grid-row:4/4;
     }
+    }
     .history__text {
         font-size: 20px;
         color: #112D3C;
@@ -828,10 +851,5 @@ height:100px;
             border-width: 3px;
             border-radius: 10%;
             padding:5px 5px 5px 5px;
-            border-color:#112D3C;
+            border-color:#112D3C;}}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-
-
-}
