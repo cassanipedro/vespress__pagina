@@ -51,6 +51,11 @@ min-height:100vh;
 
 }
 
+.card{
+ 
+    background-image: linear-gradient(var(--principal),var(--secondary));
+}
+
 
 
 
@@ -126,6 +131,7 @@ font-size: 200%;
 .main__headers1{ 
     position: absolute;
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     opacity: 0;
     font-size: 150%;
@@ -220,8 +226,6 @@ font-size: 200%;
     width: 100%;
     grid-row: 5/5;
     grid-column: 1/13;
-
-
 }
 .footer__format {
     background-image: url("./assets/image/footer_image.jpeg");
@@ -246,10 +250,10 @@ font-size: 200%;
 
 .footer__format_index p {
     position: relative;
-    color: yellowgreen;
+    color: black;
     text-shadow: 2px 2px black;
     font-family: var(--font-primary);
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     z-index: 19;
     left: 40vw;
@@ -266,12 +270,15 @@ font-size: 200%;
 
 }
 .footer__format1 p {
-    color: yellowgreen;
+    position: relative;
+    color: black;
     text-shadow: 2px 2px black;
     font-family: var(--font-primary);
     font-size: 40px;
     text-align: center;
     z-index: 19;
+    left: 23rem;
+
   
 }
 
@@ -430,9 +437,11 @@ grid-column: 2/12;
     color: #336971;
 }
 .txt{
+    position:relative;
+    left: 40%;
     background-color: rgba(0, 0, 0,0);
     height: 100%;
-    width: 100%;
+    width: 25%;
     size: auto;
     text-align: center;
     display: flex;
@@ -443,12 +452,12 @@ grid-column: 2/12;
     transition: all .3s;
 }
     .txt h5{
-font-size: 120%;
+font-size: 75rem;
 padding-bottom: 20vh;
 
     }
     .txt h4{
-font-size: 80%;
+font-size: 15rem;
 color:#CE241A;
 overflow:scroll;
 
@@ -705,7 +714,20 @@ height:100px;
         justify-content:center ;
     }
     /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
+    
+
+    .footer__format1 p {
+        position: relative;
+        color: black;
+        text-shadow: 2px 2px black;
+        font-family: var(--font-primary);
+        font-size: 28px;
+        text-align: center;
+        z-index: 19;
+        left: 8rem;
+    }
+
     .image__dimensions{
         height: 50%;
     }
@@ -736,12 +758,12 @@ height:100px;
 
 }
 .txt h5{
-    font-size: 80%;
+    font-size: 95%;
     padding-bottom: 10vh;
     
 }
 .txt h4{
-    font-size: 50%;
+    font-size: 75%;
     color:#CE241A;
     overflow:scroll;
     
