@@ -1,0 +1,41 @@
+.footer__format1 {
+    background-image: url("../image/footer_image.jpeg");
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    grid-row: 5/5;
+    grid-column: 1/13;
+
+p {
+    position: relative;
+    color: black;
+    text-shadow: 2px 2px black;
+    font-family: var(--font-primary);
+    font-size: 40px;
+    text-align: center;
+    z-index: 19;
+    left: 23rem;
+
+  
+}}
+.the__police{
+    position:absolute;
+    left:80%;
+}
+.iconos1{
+    position: relative;
+    margin: 9px,3px,3px,3px;
+}
+@media only screen and (max-width: 600px) {
+    
+
+    .footer__format1 p {
+        position: relative;
+        color: black;
+        text-shadow: 2px 2px black;
+        font-family: var(--font-primary);
+        font-size: 28px;
+        text-align: center;
+        z-index: 19;
+        left: 8rem;
+    }}

@@ -1,0 +1,25 @@
+.head__orientation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.navegation__display {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+
+
+ a {
+    color: $secondary;
+    font-size: 20px;
+
+&:hover {
+    color: dodgerblue;
+    font-size: xx-large;
+}
+}
+}

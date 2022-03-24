@@ -1,1 +1,18 @@
-@import url
+
+/* normalize*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    grid-column-start: 1;
+    grid-column-end:13 ;
+    grid-row-start: 1;
+    grid-row-end:1 ;
+}
+body{
+    background-color: $principal;
+    }

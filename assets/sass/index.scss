@@ -1,0 +1,16 @@
+/*Variables*/
+@import "./misc/variables.scss";
+
+/*GLOBALES*/
+@import "./misc/normalize";
+@import "./misc/mixins";
+
+/* PARTIALS*/
+@import './partials/header';
+@import "./partials/footer";
+/* VIEWS*/
+@import "./views/principal.scss";
+@import "./views/comentarios.scss";
+@import "./views/historia.scss";
+@import "./views/nosotros.scss";
+@import "./views/products.scss";
