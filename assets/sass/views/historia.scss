@@ -1,10 +1,27 @@
 .card{
-
+    width:auto;
+    display:grid;
     background-image: linear-gradient($principal,$secondary);
+}
+.card1{
+    display:grid;
+    grid-row: 2/2;
+}
+.card2{
+    display:grid;
+    grid-row: 2/2;
+    grid-column:3/11;
 }
 .card__acomodation{
     font-size: 130%;
      margin: 3rem 3rem 3rem 13rem;
-     position:relative;
     
     }
+@media only screen and (max-width: 900px) {
+    
+.card2{
+    display:flex;
+    grid-row: 3/3;
+    grid-column:1/4;
+    background-image: linear-gradient($principal,$secondary);
+}}

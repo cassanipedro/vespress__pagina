@@ -90,16 +90,14 @@ body {
 
 .index__structure {
   grid-row: 2/2;
-  grid-column: 1/12;
+  grid-column: 0/12;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 90%;
+  margin: auto; }
 
 .image__dimensions {
-  border: solid;
   padding: 5px;
-  border-style: ridge;
-  border-width: 5px;
-  border-color: #336971;
   height: 80%;
   width: 120%;
   grid-column: 7/12;
@@ -130,7 +128,7 @@ body {
 
 .head__format2 {
   width: 100%;
-  font-family: "Italiana", serif;
+  font-family: font-primary;
   text-align: center;
   font-weight: bold;
   margin: 10%;
@@ -163,12 +161,8 @@ body {
 @media only screen and (max-width: 1200px) {
   .image__dimensions {
     position: relative;
-    border: solid;
-    padding: 5px;
     border-style: ridge;
-    border-width: 5px;
-    border-color: #336971;
-    height: 80%;
+    height: 60%;
     width: 100%;
     grid-column: 1/4;
     grid-row: 2/5; }
@@ -235,12 +229,29 @@ body {
     border-color: #112D3C; } }
 
 .card {
+  width: auto;
+  display: grid;
   background-image: linear-gradient(#A1DED2, #CE241A); }
+
+.card1 {
+  display: grid;
+  grid-row: 2/2; }
+
+.card2 {
+  display: grid;
+  grid-row: 2/2;
+  grid-column: 3/11; }
 
 .card__acomodation {
   font-size: 130%;
-  margin: 3rem 3rem 3rem 13rem;
-  position: relative; }
+  margin: 3rem 3rem 3rem 13rem; }
+
+@media only screen and (max-width: 900px) {
+  .card2 {
+    display: flex;
+    grid-row: 3/3;
+    grid-column: 1/4;
+    background-image: linear-gradient(#A1DED2, #CE241A); } }
 
 .body__nosotros {
   background-color: #A1DED2;
