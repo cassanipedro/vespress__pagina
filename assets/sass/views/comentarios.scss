@@ -1,6 +1,6 @@
 .mb-3{
     position: relative;
-width: 70%;
+width: $adapt-size*7;
 left: 3rem;
 }
 .distribution3{
@@ -24,7 +24,7 @@ grid-column: 2/12;
     width: 30%;
     border:solid;
     border-width: 3px;
-    border-radius: 10%;
+    border-radius: $adapt-size;
     padding:5px 5px 5px 5px;
     border-color:#112D3C;
 
@@ -38,10 +38,10 @@ grid-column: 2/12;
         justify-content: space-around;
     }
     .califications__style1{
-        height: 50%;
-        width: 50%;
+        height: $adapt-size*5;
+        width: $adapt-size*5;
         border:solid;
         border-width: 3px;
-        border-radius: 10%;
+        border-radius: $adapt-size;
         padding:5px 5px 5px 5px;
         border-color:#112D3C;}}

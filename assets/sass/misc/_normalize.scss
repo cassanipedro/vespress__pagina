@@ -9,10 +9,18 @@
 }
 header{
     grid-column-start: 1;
-    grid-column-end:13 ;
+    grid-column-end:12 ;
     grid-row-start: 1;
     grid-row-end:1 ;
 }
+
 body{
-    background-color: $principal;
+    @if $color-theme==dark{
+    background-color: $blacker;
     }
+    @if $color-theme==light{
+        background-color: $lighted;
+        }
+    @else{
+        background-color: $principal;
+    }}

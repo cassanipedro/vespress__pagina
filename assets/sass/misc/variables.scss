@@ -2,7 +2,20 @@
 
 /*variables*/
 $principal:#A1DED2;
-$principal:#A1DED2;
+$lighted:#bad7d1;
+$blacker:#1f322e;
 $secondary:#CE241A;
+$adapt-size:10%;
+$color-theme:dark;
 $font-primary:'Italiana', serif;
 $font-secondary:'Italiana', serif;
+
+
+$map__variable:(
+    background:$principal,
+    distribute:grid,
+    column:repeat(12,1fr),
+    row:0.25fr,1fr,1fr, 1fr ,0.25fr,
+    gapss:2em,
+    gen:100vh,
+    );
