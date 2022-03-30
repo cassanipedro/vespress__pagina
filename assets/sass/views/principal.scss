@@ -3,7 +3,7 @@
     display:grid;
     grid-template-columns:repeat(12, 1fr);
     grid-template-rows: 0.20fr 1fr 0.15fr;
-    grid-auto-rows: (100px,auto);
+    grid-auto-rows: (100px,auto);                                                                                                                                                                                                                     
     row-gap: 2ch;
 }
 .index__structure{
