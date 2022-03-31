@@ -11,3 +11,6 @@
     display: flex;
     flex-direction: column;
 }
+@mixin position3($column,$row){
+    grid-row:$column;
+}

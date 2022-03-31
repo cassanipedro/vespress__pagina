@@ -11,12 +11,18 @@
 
 header {
   grid-column-start: 1;
-  grid-column-end: 13;
+  grid-column-end: 12;
   grid-row-start: 1;
   grid-row-end: 1; }
 
 body {
+  background-color: #1f322e;
   background-color: #A1DED2; }
+
+.format__values, .head__format, .head__format1, .head__format2 {
+  width: 100%;
+  font-family: "Italiana", serif;
+  text-align: center; }
 
 .main__headers {
   display: flex;
@@ -103,23 +109,23 @@ body {
   grid-column: 7/12;
   grid-row: 2/5; }
 
+.titulo {
+  text-align: center;
+  font-family: "Italiana", serif;
+  color: #CE241A;
+  font-size: 10rem; }
+
 .head__display {
   display: flex;
   flex-direction: column;
   font-size: 200%; }
 
 .head__format {
-  width: 100%;
-  font-family: "Italiana", serif;
-  text-align: center;
   text-align: left;
   grid-row: 2/2;
   grid-column: 1/4; }
 
 .head__format1 {
-  width: 100%;
-  font-family: "Italiana", serif;
-  text-align: center;
   font-weight: bold;
   margin: 10%;
   text-align: left;
@@ -127,9 +133,6 @@ body {
   grid-column: 1/4; }
 
 .head__format2 {
-  width: 100%;
-  font-family: font-primary;
-  text-align: center;
   font-weight: bold;
   margin: 10%;
   text-align: left;
@@ -161,7 +164,6 @@ body {
 @media only screen and (max-width: 1200px) {
   .image__dimensions {
     position: relative;
-    border-style: ridge;
     height: 60%;
     width: 100%;
     grid-column: 1/4;
@@ -238,15 +240,26 @@ body {
   grid-row: 2/2; }
 
 .card2 {
+  position: relative;
   display: grid;
   grid-row: 2/2;
-  grid-column: 3/11; }
+  grid-column-start: 2;
+  grid-column-end: 3; }
 
 .card__acomodation {
   font-size: 130%;
-  margin: 3rem 3rem 3rem 13rem; }
+  margin: 1rem 1rem 1rem 1rem; }
+
+.panorama {
+  width: 80%;
+  display: grid;
+  grid-row: 4;
+  grid-column-start: 1;
+  grid-column-end: 12; }
 
 @media only screen and (max-width: 900px) {
+  .panorama {
+    display: none; }
   .card2 {
     display: flex;
     grid-row: 3/3;
@@ -257,21 +270,21 @@ body {
   background-color: #A1DED2;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 0.25fr,1fr,1fr, 1fr ,0.25fr;
+  grid-template-rows: 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr;
   row-gap: 2em;
-  min-height: 100vh; }
+  min-height: 10vh; }
 
 .arreglo1 {
   position: sticky;
   z-index: 20; }
 
 .wpp__position {
-  grid-row: 2/2;
-  grid-column: 4/9; }
+  grid-row: 2;
+  grid-column: 5; }
 
 .wpp__image {
   height: 120vh;
-  width: 140%;
+  width: 500%;
   border-style: solid;
   border-width: 3px;
   padding: 2%;
@@ -289,8 +302,8 @@ body {
   height: 54vh; }
 
 .information__format {
-  grid-column: 5/10;
-  grid-row: 3/3; }
+  grid-row: 1;
+  grid-column: 0.5; }
 
 .information__format2 {
   position: relative;
@@ -305,19 +318,18 @@ body {
 
 .table__format {
   background-image: linear-gradient(#a58d74, green);
-  grid-row: 4/4;
+  grid-row: 4;
   grid-column: 4/11;
   position: relative;
-  bottom: 30px;
   width: 100%;
   border: 2px double;
-  height: 130%;
+  height: 30%;
   justify-items: center; }
 
 @media only screen and (max-width: 600px) {
   .wpp__image {
     height: 80vh;
-    width: 140%;
+    width: 700%;
     border-style: solid;
     border-width: 3px;
     padding: 2%;
@@ -335,8 +347,14 @@ body {
     top: 20%; } }
 
 .picture2 {
-  grid-column: 3/4;
-  grid-row: 2/2; }
+  grid-row: 2;
+  grid-column: 4; }
+  .picture2 .distribution {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 0.20fr 1fr 1fr 1fr 0.15fr;
+    grid-auto-rows: 100px, auto;
+    row-gap: 2ch; }
 
 .sthetic p {
   display: flex;
@@ -349,7 +367,7 @@ body {
 .sthetic img {
   position: relative;
   height: 100%;
-  width: 23vw;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -363,8 +381,8 @@ body {
   cursor: pointer; }
 
 .product {
-  grid-column: 9/11;
-  grid-row: 2/2; }
+  grid-row: 2;
+  grid-column: 9; }
 
 .main__headers1 {
   position: absolute;
@@ -384,8 +402,8 @@ body {
     opacity: 1; }
 
 .producto4 {
-  grid-column: 9/10;
-  grid-row: 3/3; }
+  grid-row: 3;
+  grid-column: 9; }
 
 .txt {
   position: relative;
@@ -418,16 +436,18 @@ body {
   z-index: -1; }
 
 .producto3 {
-  grid-column: 6/7;
-  grid-row: 2/2; }
+  grid-row: 2;
+  grid-column: 6; }
 
 .producto5 {
-  grid-column: 3/4;
-  grid-row: 3/3; }
+  grid-column: 4;
+  grid-row: 3; }
 
 .producto6 {
-  grid-column: 6/7;
-  grid-row: 3/3; }
+  grid-row: 3;
+  grid-column: 7;
+  grid-column: 7;
+  grid-row: 3; }
 
 @media only screen and (max-width: 600px) {
   .txt h5 {
@@ -439,6 +459,10 @@ body {
     overflow: scroll; } }
 
 @media only screen and (max-width: 1200px) {
+  .productos__responsive {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 0.30fr 0.30fr 0.30fr; }
   .sthetic p {
     display: flex;
     flex-direction: row;
@@ -447,5 +471,7 @@ body {
     font-size: 15px;
     color: #336971; }
   .producto4 {
+    grid-row: 4;
+    grid-column: 6;
     grid-column: 6/6;
     grid-row: 4/4; } }

@@ -24,3 +24,8 @@ body{
     @else{
         background-color: $principal;
     }}
+.format__values{
+    width: 100%;
+    font-family: $font-primary;
+    text-align: center;
+}

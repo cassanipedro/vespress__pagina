@@ -8,17 +8,27 @@
     grid-row: 2/2;
 }
 .card2{
+    position: relative;
     display:grid;
     grid-row: 2/2;
-    grid-column:3/11;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 .card__acomodation{
     font-size: 130%;
-     margin: 3rem 3rem 3rem 13rem;
-    
+     margin: 1rem 1rem 1rem 1rem;
     }
+.panorama{
+    width: 80%;
+    display: grid;
+    grid-row: 4;
+    grid-column-start: 1;
+    grid-column-end: 12;
+}
 @media only screen and (max-width: 900px) {
-    
+    .panorama{
+        display: none;
+    }
 .card2{
     display:flex;
     grid-row: 3/3;

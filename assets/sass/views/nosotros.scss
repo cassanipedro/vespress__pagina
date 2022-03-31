@@ -10,11 +10,11 @@
         position: sticky;
         z-index: 20;
     }.wpp__position{
-@include position(2/2,4/9);
+@include position(2,5);
     
     }.wpp__image {
         height: 120vh;
-        width: 140%;
+        width: 500%;
     
         border-style: solid;
         border-width: 3px;
@@ -49,19 +49,18 @@
     }
     .table__format {
         background-image: linear-gradient(#a58d74,green);
-        grid-row:4/4;
+        grid-row:4;
         grid-column:4/11;
         position: relative;
-        bottom: 30px;
         width: 100%;
         border: 2px double;
-        height: 130%;
+        height: 30%;
         justify-items: center;
     }
     @media only screen and (max-width: 600px) {
         .wpp__image {
             height: 80vh;
-            width: 140%;
+            width: 700%;
         
             border-style: solid;
             border-width: 3px;

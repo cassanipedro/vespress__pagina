@@ -1,5 +1,5 @@
 .picture2{
-    @include position(2/2,3/4);
+    @include position(2,4);
 .distribution{
 display: grid;
 grid-template-columns: repeat(12,1fr);
@@ -20,7 +20,7 @@ p {
 img {
     position: relative;
     height: 100%;
-    width: 23vw;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -35,7 +35,7 @@ img {
 }
 }
 .product{
-    @include position(2/2,9/11);
+    @include position(2,9);
     }
 
     .main__headers1{ 
@@ -58,7 +58,7 @@ img {
         opacity: 1;
     }}
     .producto4{
-        @include position(3/3,9/10);
+        @include position(3,9);
     }
 
     .txt{
@@ -96,18 +96,18 @@ h4{
         z-index: -1;
     }
     .producto3{
-        @include position(2/2,6/7);
+        @include position(2,6);
     }
 
     .producto5{
-        grid-column: 3/4;
-        grid-row:3/3;
+        grid-column: 4;
+        grid-row:3;
 
     }
     .producto6{
-        @include position(3/3,6/7);
-        grid-column: 6/7;
-        grid-row:3/3;
+        @include position(3,7);
+        grid-column: 7;
+        grid-row:3;
     }
     @media only screen and (max-width: 600px) {
 
@@ -127,7 +127,11 @@ h4{
     }
 @media only screen and (max-width: 1200px) {
 
-
+.productos__responsive{
+display: grid;
+grid-template-columns: repeat(12,1fr);
+grid-template-rows: 0.30fr 0.30fr 0.30fr  ;
+}
     .sthetic p {
         display: flex;
         flex-direction: row;
@@ -137,7 +141,7 @@ h4{
         color: #336971;
     }
     .producto4{
-        @include position(4/4,6/6);
+        @include position(4,6);
         grid-column: 6/6;
         grid-row:4/4;
     }
