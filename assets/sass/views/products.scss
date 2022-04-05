@@ -1,14 +1,13 @@
-.picture2{
-    @include position(2,4);
+
 .distribution{
 display: grid;
 grid-template-columns: repeat(12,1fr);
 grid-template-rows:0.20fr 1fr 1fr 1fr 0.15fr ;
 grid-auto-rows: (100px,auto);
 row-gap:2ch;
-
+ 
 }
-}.sthetic{ 
+.sthetic{ 
 p {
     display: flex;
     flex-direction: row;
@@ -19,14 +18,12 @@ p {
 }
 img {
     position: relative;
-    height: 100%;
-    width: 100%;
-    display: flex;
+    margin: 10px 10px 10px 10px;
     align-items: center;
-    flex-direction: column;
+
     justify-content: center;
     justify-content: space-evenly;
-    margin: 10px 0px 10px 0px;
+
     padding: 5px;
     border-style: ridge;
     border-width: 5px;
@@ -34,9 +31,6 @@ img {
     cursor: pointer;
 }
 }
-.product{
-    @include position(2,9);
-    }
 
     .main__headers1{ 
         position: absolute;
@@ -57,16 +51,13 @@ img {
         flex-direction: column;
         opacity: 1;
     }}
-    .producto4{
-        @include position(3,9);
-    }
 
     .txt{
         position:relative;
         left: 40%;
         background-color: rgba(0, 0, 0,0);
-        height: 100%;
-        width: 25%;
+        height: 84%;
+        width: 100%;
         size: auto;
         text-align: center;
         display: flex;
@@ -91,26 +82,39 @@ h4{
         
     }}
     .image_product{
-        height: 150vh;
-        width:150vw;
+        display: flex;
+        height: 200px;
+        width:200px;
         z-index: -1;
     }
-    .producto3{
-        @include position(2,6);
-    }
+.product--answer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media only screen and (max-width: 600px) {
+        .txt{
+            position:relative;
+            left: 40%;
+            background-color: rgba(0, 0, 0,0);
+            height: 55%;
+            width: 35%;
+            size: auto;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0,0);
+            position: relative;
+            transition: all .3s;
+    
 
-    .producto5{
-        grid-column: 4;
-        grid-row:3;
-
-    }
-    .producto6{
-        @include position(3,7);
-        grid-column: 7;
-        grid-row:3;
-    }
-    @media only screen and (max-width: 600px) {
-
+            
+        &:hover{
+        background-color: rgba(0, 0, 0,0.6);
+            opacity: 1;
+            
+        }}
         .txt h5{
             font-size: 95%;
             padding-bottom: 10vh;
@@ -119,19 +123,51 @@ h4{
         .txt h4{
             font-size: 75%;
             color:#CE241A;
-            overflow:scroll; 
         }
 
 
-
-    }
-@media only screen and (max-width: 1200px) {
-
 .productos__responsive{
-display: grid;
-grid-template-columns: repeat(12,1fr);
-grid-template-rows: 0.30fr 0.30fr 0.30fr  ;
+    display: flex;
+    flex-direction: column;
 }
+}
+@media only screen and (min-width:600px){
+    .productos__responsive{
+
+        display: flex;
+        flex-direction: row;
+    }
+}
+.txt{
+    position:relative;
+    left: 40%;
+    background-color: rgba(0, 0, 0,0);
+    height: 84%;
+    width: 50%;
+    size: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0,0);
+    position: relative;
+    transition: all .3s;
+
+h5{
+font-size: 2rem;
+padding-bottom: 10vh; 
+    }
+h4{
+font-size: 1rem;
+color:#CE241A;
+overflow: visible;
+    }
+&:hover{
+background-color: rgba(0, 0, 0,0.6);
+    opacity: 1;
+    
+}}
+@media only screen and (min-width: 1200px) {
     .sthetic p {
         display: flex;
         flex-direction: row;
@@ -140,9 +176,47 @@ grid-template-rows: 0.30fr 0.30fr 0.30fr  ;
         font-size: 15px;
         color: #336971;
     }
-    .producto4{
-        @include position(4,6);
-        grid-column: 6/6;
-        grid-row:4/4;
+    .product--answer{
+        display: flex;
+        flex-direction: row;
     }
-}
+    .productos__responsive{
+        display: flex;
+        flex-direction: row;
+    }
+    .txt{
+        position:relative;
+        left: 40%;
+        background-color: rgba(0, 0, 0,0);
+        height: 84%;
+        width: 80%;
+        size: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0,0);
+        position: relative;
+        transition: all .3s;
+    
+    h5{
+    font-size: 1rem;
+    padding-bottom: 3vh; 
+        }
+    h4{
+    font-size: 0.5rem;
+    color:#CE241A;
+    overflow: visible;
+        }
+    &:hover{
+    background-color: rgba(0, 0, 0,0.6);
+        opacity: 1;
+        
+    }
+    }
+    .image_product{
+        display: flex;
+        height: 150px;
+        width:150px;
+        z-index: -1;
+    }}

@@ -13,7 +13,7 @@
 @include position(2,5);
     
     }.wpp__image {
-        height: 120vh;
+        height: 62vh;
         width: 500%;
     
         border-style: solid;
@@ -59,7 +59,7 @@
     }
     @media only screen and (max-width: 600px) {
         .wpp__image {
-            height: 80vh;
+            height: 50vh;
             width: 700%;
         
             border-style: solid;
@@ -67,6 +67,10 @@
             padding: 2%;
             margin: 8px;
             border-color: #CE241A;
+        }
+        .coffetruck__format {
+            position: relative;
+            height: 24vh;
         }
         .information__format2  {
             position: relative;
